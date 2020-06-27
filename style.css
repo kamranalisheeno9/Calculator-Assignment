@@ -3,11 +3,14 @@
     padding: 0;
 }
 body{
-    background: linear-gradient(45deg, rgba(0,128,128,1) 0%, rgba(255,255,255,1) 25%, rgba(5,193,255,1) 50%, rgba(255,255,255,1) 85%, rgba(0,87,87,1) 100%); 
-    background-repeat: no-repeat;
-    height: 94vh;
+    background-color: rgba(0, 255, 242, 0.397) !important;
 }
-
+.name{
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    border: 5px double red;
+}
 .calc{
     width: 40% !important;
     margin: 50px auto;
@@ -172,6 +175,9 @@ margin-left: 15px;
             width: 78%;
     
         } 
+        .name{
+            width: 60%;
+        }
     
 }
 
@@ -227,6 +233,9 @@ margin-left: 15px;
         width: 77%;
 
     } 
+    .name{
+        width:80%
+    }
     
     
 }
@@ -248,7 +257,9 @@ margin-left: 15px;
         width: 77%;
 
     } 
-    
+.name{
+    width:90%
+}    
     
 }
 
@@ -261,7 +272,7 @@ margin-left: 15px;
         width: 23%;
     }
     .cancelbtn{
-        width: 43%;
+        width: 41%;
     }
     .signbtn{
         margin-left: 0px;
@@ -270,7 +281,10 @@ margin-left: 15px;
         width: 75%;
 
     } 
-        }
+    .name{
+        width:90%
+    }    
+}
 
 
 @media only screen and (max-width: 320px)

@@ -15,7 +15,6 @@ function resultEnd(){
     resultValueMain.value=eval(resultValue.value)
     
     document.getElementById("innerresult").value =resultValueMain.value;
-    document.getElementById("innerresult").value ="";
 
 
 

@@ -1,24 +1,28 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: rgba(0, 255, 242, 0.397) !important;
-}
-.name{
+
+.name {
     width: 40%;
     text-align: center;
     margin: 0 auto;
     border: 5px double red;
+    background-color: white;
+    font-family: Georgia, Times, 'Times New Roman', serif;
 }
-.calc{
+.name::first-letter{
+    font-size: 50px;
+}
+
+.calc {
     width: 40% !important;
     margin: 50px auto;
-    background: linear-gradient(90deg, rgb(22, 19, 13) 74%,rgb(3, 236, 197) 10%);
+    background: linear-gradient(90deg, rgb(22, 19, 13) 74%, rgb(3, 236, 197) 10%);
     border-radius: 25px 25px 6px 6px;
-
 }
-.screen{
+
+.screen {
     width: 100%;
     height: 80px;
     background-color: rgb(49, 43, 34);
@@ -27,12 +31,11 @@ body{
     padding-right: 15px;
     text-align: right;
     color: white;
-
-
 }
-.innerscreen{
-    color: white;
 
+.innerscreen {
+    color: white;
+  border: none;
     padding-right: 10px;
     font-size: 18px;
     letter-spacing: 3px;
@@ -41,29 +44,25 @@ body{
     text-align: right;
     height: 35px;
     background-color: rgb(5, 5, 4);
-    border: none;
     border-radius: 15px 15px 0px 0px;
-
 }
-.cancelbtn{
-    /* margin-left: 5px; */
-    width:46%;
 
-margin-left: 15px;
+.cancelbtn {
+    width: 46%;
+    margin-left: 15px;
     font-size: 35px;
     border: none;
     margin-top: 5px;
     color: red;
-    /* transition: 1s all linear; */
     font-family: 'Exo 2', sans-serif;
-
     background: transparent;
-
 }
-.cancelbtn:focus,.signbtn:focus,.cancelbtn:focus,.twonumberbtn:focus,.numberbtn:focus{
+
+.cancelbtn:focus, .signbtn:focus, .cancelbtn:focus, .twonumberbtn:focus, .numberbtn:focus {
     outline: none;
 }
-.signbtn{
+
+.signbtn {
     background: transparent;
     margin-left: 5px;
     color: rgb(255, 255, 255);
@@ -71,234 +70,185 @@ margin-left: 15px;
     width: 60%;
     font-size: 42px;
     font-weight: 700;
-    /* transition: 1s all linear; */
-
     font-family: 'Exo 2', sans-serif;
-
-
-
 }
 
-.numberbtn{
+.numberbtn {
     color: white;
     border: none;
     width: 29.2%;
-margin-left: 15px;
-
+    margin-left: 15px;
     margin-top: 5px;
     font-size: 35px;
-    /* transition: 1s all linear; */
-background: transparent;
+    background: transparent;
     font-family: 'Exo 2', sans-serif;
 }
-.result{
+
+.result {
     height: 110px;
     border-radius: 50px 50px 50px 50px;
-
 }
-.twonumberbtn{
-    /* margin-left: 5px; */
+
+.twonumberbtn {
     margin-bottom: 8px;
     border: none;
-    width:46%;
-margin-left: 15px;
-
+    width: 46%;
+    margin-left: 15px;
     margin-top: 5px;
     font-size: 35px;
-    /* transition: 1s all linear; */
     color: white;
     background: transparent;
     font-family: 'Exo 2', sans-serif;
-
-    
 }
 
-.cancelbtn:active,.cancelbtn:active,.twonumberbtn:active,.numberbtn:active{
+.cancelbtn:active, .cancelbtn:active, .twonumberbtn:active, .numberbtn:active {
     color: rgb(0, 255, 179);
 }
-.signbtn:active{
+
+.signbtn:active {
     color: black;
 }
 
-@media only screen and (max-width: 1300px)
-{
-    
-    .twonumberbtn{
+@media only screen and (max-width: 1300px) {
+    .twonumberbtn {
         width: 77%;
     }
-    .cancelbtn{
+    .cancelbtn {
         width: 44%;
-
     }
-    .numberbtn{
+    .numberbtn {
         width: 25%;
     }
-    
-
 }
 
-
-
-@media only screen and (max-width: 1050px)
-{
-    .calc{
+@media only screen and (max-width: 1050px) {
+    .calc {
         width: 60% !important;
-    }   
-    .numberbtn{
+    }
+    .numberbtn {
         width: 25%;
     }
-    .cancelbtn{
+    .cancelbtn {
         width: 45%;
     }
-    .twonumberbtn{
+    .twonumberbtn {
         width: 78%;
-
     }
 }
 
-
-
-
-
-@media only screen and (max-width: 955px)
-{
-    .calc{
-            width: 70% !important;
-        }      
-        .numberbtn{
-            width: 25%;
-        }
-        .cancelbtn{
-            width: 44%;
-        }
-        .twonumberbtn{
-            width: 78%;
-    
-        } 
-        .name{
-            width: 60%;
-        }
-    
-}
-
-@media only screen and (max-width: 830px)
-{
-    .calc{
-        width: 80% !important;
-    }      
-    .numberbtn{
+@media only screen and (max-width: 955px) {
+    .calc {
+        width: 70% !important;
+    }
+    .numberbtn {
         width: 25%;
     }
-    .cancelbtn{
+    .cancelbtn {
         width: 44%;
     }
-    .twonumberbtn{
+    .twonumberbtn {
         width: 78%;
-
-    } 
-
-
+    }
+    .name {
+        width: 60%;
+    }
 }
 
-
-@media only screen and (max-width: 730px)
-{
-    .calc{
+@media only screen and (max-width: 830px) {
+    .calc {
         width: 80% !important;
-    }      
-    .numberbtn{
+    }
+    .numberbtn {
+        width: 25%;
+    }
+    .cancelbtn {
+        width: 44%;
+    }
+    .twonumberbtn {
+        width: 78%;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .calc {
+        width: 80% !important;
+    }
+    .numberbtn {
         width: 24.8%;
     }
-    .cancelbtn{
+    .cancelbtn {
         width: 44%;
     }
-    .twonumberbtn{
+    .twonumberbtn {
         width: 78%;
-
-    } 
-   
+    }
 }
-@media only screen and (max-width: 655px)
-{
-    .calc{
+
+@media only screen and (max-width: 655px) {
+    .calc {
         width: 80% !important;
-    }      
-    .numberbtn{
+    }
+    .numberbtn {
         width: 24.4%;
     }
-    .cancelbtn{
+    .cancelbtn {
         width: 44%;
     }
-    .twonumberbtn{
+    .twonumberbtn {
         width: 77%;
-
-    } 
-    .name{
-        width:80%
     }
-    
-    
+    .name {
+        width: 80%
+    }
 }
 
-
-@media only screen and (max-width: 542px)
-{
-    .calc{
-        width: 100% !important; 
-    }   
-    .numberbtn{
+@media only screen and (max-width: 542px) {
+    .calc {
+        width: 100% !important;
+    }
+    .numberbtn {
         width: 24%;
     }
-    .cancelbtn{
+    .cancelbtn {
         width: 43%;
-
     }
-    .twonumberbtn{
+    .twonumberbtn {
         width: 77%;
-
-    } 
-.name{
-    width:90%
-}    
-    
+    }
+    .name {
+        width: 90%
+    }
 }
 
-@media only screen and (max-width: 383px)
-{
-    .calc{
-        width: 100% !important; 
-    }   
-    .numberbtn{
+@media only screen and (max-width: 383px) {
+    .calc {
+        width: 100% !important;
+    }
+    .numberbtn {
         width: 23%;
     }
-    .cancelbtn{
+    .cancelbtn {
         width: 41%;
     }
-    .signbtn{
+    .signbtn {
         margin-left: 0px;
     }
-    .twonumberbtn{
+    .twonumberbtn {
         width: 75%;
-
-    } 
-    .name{
-        width:90%
-    }    
+    }
+    .name {
+        width: 90%
+    }
 }
 
-
-@media only screen and (max-width: 320px)
-{
-    .calc{
-        width: 100% !important; 
-    }   
-    
-    .cancelbtn{
+@media only screen and (max-width: 320px) {
+    .calc {
+        width: 100% !important;
+    }
+    .cancelbtn {
         width: 40%;
     }
-   
-    .numberbtn{
+    .numberbtn {
         width: 22.75%;
     }
-    
 }
